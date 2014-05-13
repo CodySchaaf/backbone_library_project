@@ -6,10 +6,10 @@ app.BookView = Backbone.View.extend({
   template:  _.template($('#bookTemplate').html()),
 
   events: {
-          'click .delete': 'deleteBook'
+    'click .delete': 'deleteBook'
   },
 
-  deleteBook: function() {
+  deleteBook: function () {
     this.model.destroy();
 
     this.remove();
